@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/formulaire.css">
+		<title>Interactive form</title>
+	</head>
+	<body>
+		<div id="main">
+			<form id="form">
+				<label for="nom" class="form_col">Last name : </label>
+				<input type="text" name="nom" id="nom" placeholder="Enter your last name">
+				<span class="tooltip" id="nomToolTip">A last name should contain at least 2 characters</span>
+				<br><br>
+
+				<label for="prenom" class="form_col">First name : </label>
+				<input type="text" name="prenom" id="prenom" placeholder="Enter your first name">
+				<span class="tooltip" id="prenomToolTip">A first name should contain at least 2 characters</span>
+				<br><br>
+				
+				<span class="form_col">Gender :</span>
+				<label><input type="radio" name="sexe" value="H" id="H">Man</label>
+				<label><input type="radio" name="sexe" value="F" id="F">Woman</label>
+				<span class="tooltip" id="sexeToolTip">You should select your gender</span>
+				<br><br>
+				
+				<label for="age" class="form_col">Age : </label>
+				<input type="text" name="age" id="age" placeholder="Enter your age">
+				<span class="tooltip" id="ageToolTip">Age should be between 5 and 140</span>
+				<br><br>
+				
+				<label for="pseudo" class="form_col">Pseudonym : </label>
+				<input type="text" name="pseudo" id="pseudo" placeholder="Enter your pseudonym">
+				<span class="tooltip" id="pseudoToolTip">A pseudonym should contain at least 4 characters</span>
+				<br><br>
+				
+				<label for="mdp" class="form_col">Password : </label>
+				<input type="password" name="mdp" id="mdp" placeholder="Enter your password">
+				<span class="tooltip" id="mdpToolTip">A password should contain at least 6 characters</span>
+				<br><br>
+				
+				<label for="mdpconfirm" class="form_col">Password (confirmation) : </label>
+				<input type="password" name="mdpconfirm" id="mdpconfirm" placeholder="Confirmez votre mot de passe">
+				<span class="tooltip" id="mdpconfirmToolTip">The confirmation password and the original one should be identical</span>
+				<br><br>
+
+				<label for="pays" class="form_col">Country : </label>
+				<select name="pays" id="pays">
+					<option value="none">Select your country of residence:</option>
+					<option value="en">Angleterre</option>
+					<option value="fr">France</option>
+					<option value="us">Etats-Unis</option>
+				</select>
+				<span class="tooltip" id="paysToolTip">You should select your country of residence</span>
+				<br><br>
+				
+				<label for="mail" id="newsletter">
+					<input type="checkbox" name="mail" id="mail">I would like to receive the newsletter monthly.
+				</label>
+				<br><br>
+
+				<input type="submit" name="envoyer" id="envoyer" value="Sign up">
+				<input type="reset" name="reinisialiser" id="reinisialiser" value="Reset the form">
+			</form>
+		</div>
+		<script src="../js/formulaire.js"></script>
+	</body>
+</html>

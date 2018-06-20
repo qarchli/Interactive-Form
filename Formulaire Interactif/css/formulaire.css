@@ -1,0 +1,88 @@
+body{
+	padding: 30px;
+	margin-left: 50px;
+	background-color: #eee;
+}
+#H,#F{
+	width: auto;
+}
+#form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  margin: 80px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input {
+	 width: 200px;
+	 padding: 2px;
+     border: 1px solid #CCC;
+     -moz-border-radius: 2px;
+     -webkit-border-radius: 2px;
+	 border-radius: 2px;
+}
+
+input:focus {
+	border: 1px solid blue;
+ 	box-shadow: 0px 0px 1px 1px blue;
+ 	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.form_col{
+	display: inline-block;
+	text-align: right;
+	width: 200px;
+	font-family: 'Calibri';
+}
+
+.correct {
+	border-color: green;
+	box-shadow: 0px 0px 1px 1px green;
+ 	-moz-border-radius: 2px green;
+	-webkit-border-radius: 2px green;
+
+}
+.correct:focus {
+	box-shadow: 0px 0px 1px 1px green;
+ 	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.incorrect {
+	border-color: red;
+	box-shadow: 0px 0px 1px 1px red;
+ 	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.incorrect:focus {
+	box-shadow: 0px 0px 1px 1px red;
+ 	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+    visibility: hidden;
+    margin-left: 80px;
+}
+#sexeToolTip {
+	margin-left: 160px;
+}
+#paysToolTip {
+	margin-left: 70px;
+}
+#mail,#envoyer {
+	width: auto;
+	font-size: large;
+	font-family: 'Calibri';
+	margin-left: 205px;
+}
+#reinisialiser {
+	width: auto;
+		font-size: large;
+			font-family: 'Calibri';
+
+
+}
